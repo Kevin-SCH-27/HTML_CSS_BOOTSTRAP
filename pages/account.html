@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+    <title>Ma Boutique - Inscription</title>
 </head>
 <body>
     <header>
@@ -20,5 +20,66 @@
         <li><a href="contact.html">Contact</a></li>
     </ul>
     </header>
+
+    <main>
+        <form action="" method="">
+            <h2>inscrivez-vous :</h2>
+            <label for="nom">Votre nom : </label>
+            <input type="text" id="nom" placeholder="Votre nom" required><br>
+
+            <label for="prenom">Votre prénom : </label>
+            <input type="text" id="prénom" placeholder="Votre prénom" required><br>
+
+            <label for="email">Votre adresse mail : </label>
+            <input type="email" id="email" placeholder="Votre adresse mail" required><br>
+
+            <label for="mdp">Votre mot de passe : </label>
+            <input type="password" id="mdp" placeholder="Votre mot de passe" required><br>
+
+            <label>Acceptez-vous de recevoir les offres du site ? (s'il vous plaîîît ???)</label>
+            <input type="radio" id="oui" name="opt-in" value="oui">
+            <label for="oui">Oui</label>
+            <input type="radio" id="non" name="opt-in" value="non">
+            <label for="non">Non</label><br>
+
+            <label>Intérêts</label>
+            <input type="checkbox" name "interests" id="desktop" value="desktop">
+            <label for="desktop">Desktop</label>
+            <input type="checkbox" name "interests" id="laptop" value="laptop">
+            <label for="laptop">Laptop</label>
+            <input type="checkbox" name "interests" id="componants" value="componants">
+            <label for="componants">Composantes</label><br>
+
+            <label for="pays">Pays : </label>
+            <select name="pays" id="pays">
+                <option value="Angleterre">Angleterre</option>
+                <option value="France">France</option>
+                <option value="Espagne">Espagne</option>
+                <option value="Italie">Italie</option>
+                <option value="Tunisie">Tunisie</option>
+            </select><br>
+
+            <button type="submit">Envoyer</button>
+            <button type="reset">Réinitialiser</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</p>
+        <div class="reseaux">
+            <p>Suivez nous sur : </p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/logo_fb_reduit.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../assets/images/logo_insta_reduit.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="../assets/images/logo_tiktok_reduit.png" alt="TikTok"></a>
+                <!-- href="mailto:xxx@xx.com" permet d'ouvrir une appli de messagerie pour envoyer un mail au destinataire désigné -->
+            <a href="mailto:kevin.sch.18@gmail.com">Envoyez nous un email</a>
+            <!-- href="tem:0123456789" permet d'ouvrir une application d'appel pour téléphoner au destinataire désigné -->
+            <a href="tel:0606060606">Téléphonez nous</a>
+            <!-- href="document hébergé" ouvre le document (target blank permet de l'pouvrir dans un nouvel onglet, download de le faire télécharger automatiquement) -->
+            <!-- l'attribut download suffit ppour déclencher le dl, mais rajouter un nom (download="nom.ext") renomme le fichier une fois téléchargé -->
+            <a href="../assets/pdf/mentions_légales.pdf" target="_blank" download>Mentions légales</a>
+        </div>
+    </footer>
 </body>
 </html>

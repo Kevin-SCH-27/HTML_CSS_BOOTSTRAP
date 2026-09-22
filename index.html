@@ -9,7 +9,7 @@
 
     <header>
     <!-- Titre principale -->
-    <h1>Ma boutique</h1>
+    <h1>Ma boutique - Accueil</h1>
     
     <!-- Liste non ordonnée pour le menu -->
     <ul>
@@ -33,11 +33,78 @@
     <h3>Nos produits phares</h3>
 
     <!-- Liste ordonnée sur les immanquables -->
-    <ol>
-        <li>Un produit super bien</li>
-        <li>Un deuxième produit super bien</li>
-        <li>À ne surtout pas manquer</li>
-    </ol>
+    <h4>Tour gamer</h4>
+    <img src="assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 480px;">
+    <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
+    <p>Prix : 749.99 €</p>
+    <button type="button">Acheter</button>
+
+    <h4>Barette de RAM 8GO DDR 4</h4>
+    <img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 480px;">
+    <p>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</p>
+    <p>Prix : 79.99 €</p>
+    <button type="button">Acheter</button>
+
+    <h4>Laptop gamer</h4>
+    <img src="assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 480px;">
+    <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
+    <p>Prix : 949.99 €</p>
+    <button type="button">Acheter</button>
+
+    <!-- Présentation par tableau -->
+     <!-- 
+    table = tableau
+     tr = loigne de tableau
+     td = cellule de la ligne
+     chaque tr doit avoir le même nombre de td pour permettre un bon affichage du tableau 
+     colspan permet de fusionner des cellules sur une ligne (fusion horizontale), rowspan permet de fusionner des lignes (fusion verticale)
+     Attention avec Rowspan au nombre de cellules dans la ligne qui doit être fusionnée
+     -->
+     <table border="1">
+        <tr>
+            <td>Catégorie</td>
+            <td>Nom</td>
+            <td>Image</td>
+            <td>Description</td>
+            <td>Prix</td>
+            <td>Sélectionner</td>
+        </tr>
+        <tr>
+            <!-- Fusion verticale -->
+            <td rowspan="2">PC</td>
+            <td>Tour gamer</td>
+            <td><img src="assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 240px;"></td>
+            <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
+            <td>Prix : 749.99 €</td>
+            <td><button type="button">Acheter</button></td>
+        </tr>
+        
+        <tr>
+            <!-- Moins un td cause fusion verticale au dessus -->
+            <td>Laptop gamer</td>
+            <td><img src="assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 240px;"></td>
+            <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
+            <td>Prix : 949.99 €</td>
+            <td><button type="button">Acheter</button></td>
+        </tr>
+
+        <tr>
+            <td>Composantes</td>
+            <td>Barette de RAM 8GO DDR 4</td>
+            <td><img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 240px;"></td>
+            <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
+            <td>Prix : 79.99 €</td>
+            <td><button type="button">Acheter</button></td>
+        </tr>
+
+        
+        <tr>
+            <td>Exclusivité</td>
+            <td>Promotion</td>
+            <td colspan="4">Produits en run off, de -20 à -50% !!!</td>
+        </tr>
+     </table>
+
 
     <!-- Les catégories de produits -->
     <h3>Produits par catégories</h3>
@@ -49,14 +116,20 @@
     </main>
 
     <footer>
-        <!-- Liste et exemples de définitions 
-         <dl>
-            <dt>HTML</dt>
-            <dd>Langage utilisé pour structurer une page web</dd>
-            <dt>CSS</dt>
-            <dd>Langage utilisé pour mettre en forme une page web!</dd>
-         </dl>-->
-
+        <p>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</p>
+        <div class="reseaux">
+            <p>Suivez nous sur : </p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/logo_fb_reduit.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../assets/images/logo_insta_reduit.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="../assets/images/logo_tiktok_reduit.png" alt="TikTok"></a>
+                <!-- href="mailto:xxx@xx.com" permet d'ouvrir une appli de messagerie pour envoyer un mail au destinataire désigné -->
+            <a href="mailto:kevin.sch.18@gmail.com">Envoyez nous un email</a>
+            <!-- href="tem:0123456789" permet d'ouvrir une application d'appel pour téléphoner au destinataire désigné -->
+            <a href="tel:0606060606">Téléphonez nous</a>
+            <!-- href="document hébergé" ouvre le document (target blank permet de l'pouvrir dans un nouvel onglet, download de le faire télécharger automatiquement) -->
+            <!-- l'attribut download suffit ppour déclencher le dl, mais rajouter un nom (download="nom.ext") renomme le fichier une fois téléchargé -->
+            <a href="../assets/pdf/mentions_légales.pdf" target="_blank" download>Mentions légales</a>
+        </div>
     </footer>
 
 </body>
