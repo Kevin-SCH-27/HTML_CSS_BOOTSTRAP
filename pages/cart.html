@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Boutique - Produits</title>
+    <title>Ma Boutique - Panier</title>
 </head>
 <body>
     <header>
@@ -25,63 +25,52 @@
     </header>
 
     <main>
-    <!-- Présentation par tableau -->
-     <!-- 
-    table = tableau
-     tr = loigne de tableau
-     td = cellule de la ligne
-     chaque tr doit avoir le même nombre de td pour permettre un bon affichage du tableau 
-     colspan permet de fusionner des cellules sur une ligne (fusion horizontale), rowspan permet de fusionner des lignes (fusion verticale)
-     Attention avec Rowspan au nombre de cellules dans la ligne qui doit être fusionnée
-     -->
+        <h2>Votre panier</h2>
+        <p>Merci de vérifier et confirmer ou annuler l'achat de votre produit</p>
+
         <table border="1">
-            <caption>Liste des produits</caption>
+            <caption>Panier</caption>
             <thead>
-                <tr>
-                    <th>Catégorie</th>
-                    <th>Nom</th>
-                    <th>Image</th>
-                    <th>Description</th>
-                    <th>Prix</th>
-                    <th>Sélectionner</th>
-                </tr>
+            <tr>
+                <th>Catégorie</th>
+                <th>Nom</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th>Prix</th>
+                <th>Acheter</th>
+                <th>Retirer</th>
+            </tr>
             </thead>
             
             <tbody>
                 <tr>
-                    <!-- Fusion verticale -->
-                    <td rowspan="2">PC</td>
+                    <td>PC</td>
                     <td>Tour gamer</td>
                     <td><img src="../assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 240px;"></td>
                     <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
                     <td>Prix : 749.99 €</td>
-                    <td><button type="button">Acheter</button></td>
+                    <td><input type="radio" id="Oui" name="achat_article_1" value="oui"></td>
+                    <td><input type="radio" id="Non" name="achat_article_1" value="non"></td>
                 </tr>
-            
 
                 <tr>
-                    <!-- Moins un td cause fusion verticale au dessus -->
+                    <td>PC</td>
                     <td>Laptop gamer</td>
                     <td><img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 240px;"></td>
                     <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
                     <td>Prix : 949.99 €</td>
-                    <td><button type="button">Acheter</button></td>
+                    <td><input type="radio" id="Oui" name="achat_article_2" value="oui"></td>
+                    <td><input type="radio" id="Non" name="achat_article_2" value="non"></td>
                 </tr>
-
+                
                 <tr>
                     <td>Composantes</td>
                     <td>Barette de RAM 8GO DDR 4</td>
                     <td><img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 240px;"></td>
                     <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
                     <td>Prix : 79.99 €</td>
-                    <td><button type="button">Acheter</button></td>
-                </tr>
-
-                
-                <tr>
-                    <td>Exclusivité</td>
-                    <td>Promotion</td>
-                    <td colspan="4">Produits en run off, de -20 à -50% !!!</td>
+                    <td><input type="radio" id="Oui" name="achat_article_3" value="oui"></td>
+                    <td><input type="radio" id="Non" name="achat_article_3" value="non"></td>
                 </tr>
             </tbody>
         </table>

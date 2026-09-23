@@ -12,107 +12,67 @@
     <h1>Ma boutique - Accueil</h1>
     
     <!-- Liste non ordonnée pour le menu -->
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="pages/about.html">À propos</a></li>
-        <li><a href="pages/products.html">Produits</a></li>
-        <li><a href="pages/account.html">Inscription</a></li>
-        <li><a href="pages/login.html">Connexion</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/about.html">À propos</a></li>
+            <li><a href="pages/products.html">Produits</a></li>
+            <li><a href="pages/account.html">Inscription</a></li>
+            <li><a href="pages/login.html">Connexion</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/cart.html">Panier</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
     <!-- La boutique en elle-même -->
-    <h2>
-        Bienvenue sur notre site de vente en ligne !<br>
-        Découvrez les nouveaux disques durs externes SSd 100 To en exclusivité !!!
-    </h2>
+    <section>
+        <h2>
+            Bienvenue sur notre site de vente en ligne !<br>
+            Découvrez les nouveaux disques durs externes SSd 100 To en exclusivité !!!
+        </h2>
+    </section>
 
     <!-- Partie sur les immanquables -->
-    <h3>Nos produits phares</h3>
+    <section>
+        <h3>Nos produits phares</h3>
 
     <!-- Liste ordonnée sur les immanquables -->
-    <h4>Tour gamer</h4>
-    <img src="assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 480px;">
-    <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
-    <p>Prix : 749.99 €</p>
-    <button type="button">Acheter</button>
+        <article>
+            <h4>Tour gamer</h4>
+            <img src="assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 480px;">
+            <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
+            <p>Prix : 749.99 €</p>
+            <button type="button">Acheter</button>
+        </article>
 
-    <h4>Barette de RAM 8GO DDR 4</h4>
-    <img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 480px;">
-    <p>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</p>
-    <p>Prix : 79.99 €</p>
-    <button type="button">Acheter</button>
+        <article>
+            <h4>Barette de RAM 8GO DDR 4</h4>
+            <img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 480px;">
+            <p>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</p>
+            <p>Prix : 79.99 €</p>
+            <button type="button">Acheter</button>
+        </article>
 
-    <h4>Laptop gamer</h4>
-    <img src="assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 480px;">
-    <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
-    <p>Prix : 949.99 €</p>
-    <button type="button">Acheter</button>
-
-    <!-- Présentation par tableau -->
-     <!-- 
-    table = tableau
-     tr = loigne de tableau
-     td = cellule de la ligne
-     chaque tr doit avoir le même nombre de td pour permettre un bon affichage du tableau 
-     colspan permet de fusionner des cellules sur une ligne (fusion horizontale), rowspan permet de fusionner des lignes (fusion verticale)
-     Attention avec Rowspan au nombre de cellules dans la ligne qui doit être fusionnée
-     -->
-     <table border="1">
-        <tr>
-            <td>Catégorie</td>
-            <td>Nom</td>
-            <td>Image</td>
-            <td>Description</td>
-            <td>Prix</td>
-            <td>Sélectionner</td>
-        </tr>
-        <tr>
-            <!-- Fusion verticale -->
-            <td rowspan="2">PC</td>
-            <td>Tour gamer</td>
-            <td><img src="assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 240px;"></td>
-            <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
-            <td>Prix : 749.99 €</td>
-            <td><button type="button">Acheter</button></td>
-        </tr>
-        
-        <tr>
-            <!-- Moins un td cause fusion verticale au dessus -->
-            <td>Laptop gamer</td>
-            <td><img src="assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 240px;"></td>
-            <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
-            <td>Prix : 949.99 €</td>
-            <td><button type="button">Acheter</button></td>
-        </tr>
-
-        <tr>
-            <td>Composantes</td>
-            <td>Barette de RAM 8GO DDR 4</td>
-            <td><img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 240px;"></td>
-            <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
-            <td>Prix : 79.99 €</td>
-            <td><button type="button">Acheter</button></td>
-        </tr>
-
-        
-        <tr>
-            <td>Exclusivité</td>
-            <td>Promotion</td>
-            <td colspan="4">Produits en run off, de -20 à -50% !!!</td>
-        </tr>
-     </table>
-
+        <article>
+            <h4>Laptop gamer</h4>
+            <img src="assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 480px;">
+            <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
+            <p>Prix : 949.99 €</p>
+            <button type="button">Acheter</button>
+        </article>
+    </section>
 
     <!-- Les catégories de produits -->
-    <h3>Produits par catégories</h3>
-    <ul>
-        <li>Électronique</li>
-        <li>Informatique</li>
-        <li>Bureautique et applications</li>
-    </ul>
+    <section>
+        <h3>Produits par catégories</h3>
+        <ul>
+            <li>Électronique</li>
+            <li>Informatique</li>
+            <li>Bureautique et applications</li>
+        </ul>
+    </section>
     </main>
 
     <footer>

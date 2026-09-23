@@ -11,56 +11,80 @@
     <h1>Ma boutique</h1>
     
     <!-- Liste non ordonnée pour le menu -->
-    <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="products.html">Produits</a></li>
-        <li><a href="account.html">Inscription</a></li>
-        <li><a href="login.html">Connexion</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="account.html">Inscription</a></li>
+            <li><a href="login.html">Connexion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Panier</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
         <form action="" method="">
-            <h2>inscrivez-vous :</h2>
-            <label for="nom">Votre nom : </label>
-            <input type="text" id="nom" placeholder="Votre nom" required><br>
+            <h2>Inscrivez-vous :</h2>
+            <fieldset>
+                <legend>Informations de connexion</legend>
+                <div>
+                    <label for="nom">Votre nom : </label>
+                    <input type="text" id="nom" placeholder="Votre nom" required>
+                </div>
 
-            <label for="prenom">Votre prénom : </label>
-            <input type="text" id="prénom" placeholder="Votre prénom" required><br>
+                <div>
+                    <label for="prenom">Votre prénom : </label>
+                    <input type="text" id="prenom" placeholder="Votre prénom" required>
+                </div>
 
-            <label for="email">Votre adresse mail : </label>
-            <input type="email" id="email" placeholder="Votre adresse mail" required><br>
+                <div>
+                    <label for="email">Votre adresse mail : </label>
+                    <input type="email" id="email" placeholder="Votre adresse mail" required>
+                </div>
 
-            <label for="mdp">Votre mot de passe : </label>
-            <input type="password" id="mdp" placeholder="Votre mot de passe" required><br>
+                <div>
+                    <label for="mdp">Votre mot de passe : </label>
+                    <input type="password" id="mdp" placeholder="Votre mot de passe" required>
+                </div>
+            </fieldset>
 
-            <label>Acceptez-vous de recevoir les offres du site ? (s'il vous plaîîît ???)</label>
-            <input type="radio" id="oui" name="opt-in" value="oui">
-            <label for="oui">Oui</label>
-            <input type="radio" id="non" name="opt-in" value="non">
-            <label for="non">Non</label><br>
+            <fieldset>
+                <legend>Informations complémentaires</legend>
 
-            <label>Intérêts</label>
-            <input type="checkbox" name "interests" id="desktop" value="desktop">
-            <label for="desktop">Desktop</label>
-            <input type="checkbox" name "interests" id="laptop" value="laptop">
-            <label for="laptop">Laptop</label>
-            <input type="checkbox" name "interests" id="componants" value="componants">
-            <label for="componants">Composantes</label><br>
+                <div>
+                    <label>Acceptez-vous de recevoir les offres du site ? (s'il vous plaîîît ???)</label>
+                    <input type="radio" id="oui" name="opt-in" value="oui">
+                    <label for="oui">Oui</label>
+                    <input type="radio" id="non" name="opt-in" value="non">
+                    <label for="non">Non</label><br>
+                </div>
 
-            <label for="pays">Pays : </label>
-            <select name="pays" id="pays">
-                <option value="Angleterre">Angleterre</option>
-                <option value="France">France</option>
-                <option value="Espagne">Espagne</option>
-                <option value="Italie">Italie</option>
-                <option value="Tunisie">Tunisie</option>
-            </select><br>
+                <div>
+                    <label>Intérêts</label>
+                    <input type="checkbox" name="interests" id="desktop" value="desktop">
+                    <label for="desktop">Desktop</label>
+                    <input type="checkbox" name="interests" id="laptop" value="laptop">
+                    <label for="laptop">Laptop</label>
+                    <input type="checkbox" name="interests" id="componants" value="componants">
+                    <label for="componants">Composantes</label><br>
+                </div>
 
+                <label for="pays">Pays : </label>
+                <select name="pays" id="pays">
+                    <option value="Angleterre">Angleterre</option>
+                    <option value="France">France</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Tunisie">Tunisie</option>
+                </select><br>
+            </fieldset>
+
+            <div>
             <button type="submit">Envoyer</button>
             <button type="reset">Réinitialiser</button>
+            </div>
         </form>
 
     </main>
