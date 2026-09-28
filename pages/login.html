@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Boutique - Connexion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
     <!-- Titre principale -->
-    <h1>Ma boutique</h1>
+    <h1>Ma boutique - Se connecter</h1>
     
     <!-- Liste non ordonnée pour le menu -->
     <nav>
@@ -16,7 +19,7 @@
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="about.html">À propos</a></li>
             <li><a href="products.html">Produits</a></li>
-            <li><a href="account.html">Inscription</a></li>
+            <li><a href="sign_up.html">Inscription</a></li>
             <li><a href="login.html">Connexion</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="cart.html">Panier</a></li>
@@ -25,36 +28,42 @@
     </header>
 
     <main>
+        
         <section>
-            <h2>Connexion</h2>
-            <div>
-                <label for="login">Votre identifiant : </label>
-                <input type="text" id="login">
-            </div>
+            <form action="" method=""></form>
+                <h2>Connexion</h2>
+                <div>
+                    <label for="login">Votre identifiant : </label>
+                    <input type="text" id="login">
+                </div>
 
-            <div>
-                <label for="mdp">Mot de passe : </label>
-                <input type="password" id="mdp">
-            </div>
+                <div>
+                    <label for="mdp">Mot de passe : </label>
+                    <input type="password" id="mdp">
+                </div>
 
-            <div>
-                <a href="account.html">Première connexion ? Inscrivez-vous</a><br>
-                <a href="https://gmail.com">Mot de passe oublié ?</a>
-            </div>
+                <button type="submit">Connexion</button>
+
+                <div>
+                    <a href="account.html">Première connexion ? Inscrivez-vous</a><br>
+                    <a href="https://gmail.com">Mot de passe oublié ?</a>
+                </div>
+            </form>
         </section>
+        
     </main>
 
     <footer>
-        <p>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</p>
+        <h2>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</h3>
         <div class="reseaux">
             <p>Suivez nous sur : </p>
-            <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/logo_fb_reduit.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../assets/images/logo_insta_reduit.png" alt="Instagram"></a>
-            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="../assets/images/logo_tiktok_reduit.png" alt="TikTok"></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/fr/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 <!-- href="mailto:xxx@xx.com" permet d'ouvrir une appli de messagerie pour envoyer un mail au destinataire désigné -->
-            <a href="mailto:kevin.sch.18@gmail.com">Envoyez nous un email</a>
+            <a href="mailto:kevin.sch.18@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             <!-- href="tem:0123456789" permet d'ouvrir une application d'appel pour téléphoner au destinataire désigné -->
-            <a href="tel:0606060606">Téléphonez nous</a>
+            <a href="tel:0606060606"><i class="fa-solid fa-mobile-vibrate"></i></a>
             <!-- href="document hébergé" ouvre le document (target blank permet de l'pouvrir dans un nouvel onglet, download de le faire télécharger automatiquement) -->
             <!-- l'attribut download suffit ppour déclencher le dl, mais rajouter un nom (download="nom.ext") renomme le fichier une fois téléchargé -->
             <a href="../assets/pdf/mentions_légales.pdf" target="_blank" download>Mentions légales</a>

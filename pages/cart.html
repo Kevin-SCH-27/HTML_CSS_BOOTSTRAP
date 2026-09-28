@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Boutique - Panier</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
     <!-- Titre principale -->
-    <h1>Ma boutique</h1>
+    <h1>Ma boutique - Panier</h1>
     
     <!-- Liste non ordonnée pour le menu -->
     <nav>
@@ -16,7 +19,7 @@
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="about.html">À propos</a></li>
             <li><a href="products.html">Produits</a></li>
-            <li><a href="account.html">Inscription</a></li>
+            <li><a href="sign_up.html">Inscription</a></li>
             <li><a href="login.html">Connexion</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="cart.html">Panier</a></li>
@@ -25,68 +28,79 @@
     </header>
 
     <main>
-        <h2>Votre panier</h2>
-        <p>Merci de vérifier et confirmer ou annuler l'achat de votre produit</p>
-
+    <!-- Présentation par tableau -->
+     <!-- 
+    table = tableau
+     tr = loigne de tableau
+     td = cellule de la ligne
+     chaque tr doit avoir le même nombre de td pour permettre un bon affichage du tableau 
+     colspan permet de fusionner des cellules sur une ligne (fusion horizontale), rowspan permet de fusionner des lignes (fusion verticale)
+     Attention avec Rowspan au nombre de cellules dans la ligne qui doit être fusionnée
+     -->
         <table border="1">
-            <caption>Panier</caption>
+            <caption>Liste des produits</caption>
             <thead>
-            <tr>
-                <th>Catégorie</th>
-                <th>Nom</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th>Prix</th>
-                <th>Acheter</th>
-                <th>Retirer</th>
-            </tr>
+                <tr>
+                    <th>Catégorie</th>
+                    <th>Nom</th>
+                    <th>Image</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                    <th>Sélectionner</th>
+                </tr>
             </thead>
             
             <tbody>
                 <tr>
-                    <td>PC</td>
+                    <!-- Fusion verticale -->
+                    <td rowspan="2">PC</td>
                     <td>Tour gamer</td>
-                    <td><img src="../assets/images/tour_gamer.webp" alt="Tour gamer" style="width: 240px;"></td>
+                    <td><img src="../assets/images/tour_gamer.webp" alt="Tour gamer"></td>
                     <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
                     <td>Prix : 749.99 €</td>
-                    <td><input type="radio" id="Oui" name="achat_article_1" value="oui"></td>
-                    <td><input type="radio" id="Non" name="achat_article_1" value="non"></td>
+                    <td class="buy"><button type="button">Acheter</button></td>
+                </tr>
+            
+
+                <tr>
+                    <!-- Moins un td cause fusion verticale au dessus -->
+                    <td>Laptop gamer</td>
+                    <td><img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer"></td>
+                    <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
+                    <td>Prix : 949.99 €</td>
+                    <td class="buy"><button type="button">Acheter</button></td>
                 </tr>
 
                 <tr>
-                    <td>PC</td>
-                    <td>Laptop gamer</td>
-                    <td><img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer" style="width: 240px;"></td>
-                    <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
-                    <td>Prix : 949.99 €</td>
-                    <td><input type="radio" id="Oui" name="achat_article_2" value="oui"></td>
-                    <td><input type="radio" id="Non" name="achat_article_2" value="non"></td>
-                </tr>
-                
-                <tr>
                     <td>Composantes</td>
                     <td>Barette de RAM 8GO DDR 4</td>
-                    <td><img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4" style="width: 240px;"></td>
+                    <td><img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4"></td>
                     <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
                     <td>Prix : 79.99 €</td>
-                    <td><input type="radio" id="Oui" name="achat_article_3" value="oui"></td>
-                    <td><input type="radio" id="Non" name="achat_article_3" value="non"></td>
+                    <td class="buy"><button type="button">Acheter</button></td>
+                </tr>
+
+                
+                <tr>
+                    <td>Exclusivité</td>
+                    <td>Promotion</td>
+                    <td colspan="4" class="exclu">Produits en run off, de -20 à -50% !!!</td>
                 </tr>
             </tbody>
         </table>
     </main>
 
     <footer>
-        <p>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</p>
+        <h2>"Ma Boutique" est un nom de domaine déposé. Tous droits réservés.</h3>
         <div class="reseaux">
             <p>Suivez nous sur : </p>
-            <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/logo_fb_reduit.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../assets/images/logo_insta_reduit.png" alt="Instagram"></a>
-            <a href="https://www.tiktok.com/fr/" target="_blank"><img src="../assets/images/logo_tiktok_reduit.png" alt="TikTok"></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.tiktok.com/fr/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 <!-- href="mailto:xxx@xx.com" permet d'ouvrir une appli de messagerie pour envoyer un mail au destinataire désigné -->
-            <a href="mailto:kevin.sch.18@gmail.com">Envoyez nous un email</a>
+            <a href="mailto:kevin.sch.18@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             <!-- href="tem:0123456789" permet d'ouvrir une application d'appel pour téléphoner au destinataire désigné -->
-            <a href="tel:0606060606">Téléphonez nous</a>
+            <a href="tel:0606060606"><i class="fa-solid fa-mobile-vibrate"></i></a>
             <!-- href="document hébergé" ouvre le document (target blank permet de l'pouvrir dans un nouvel onglet, download de le faire télécharger automatiquement) -->
             <!-- l'attribut download suffit ppour déclencher le dl, mais rajouter un nom (download="nom.ext") renomme le fichier une fois téléchargé -->
             <a href="../assets/pdf/mentions_légales.pdf" target="_blank" download>Mentions légales</a>

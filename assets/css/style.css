@@ -1,0 +1,236 @@
+    /*
+    Le style suivant permet d'éliminer les margin et padding appliqué par défaut sur certains navigateurs
+    Il est généralement placé au début du CSS pour être appliqué par défaut sur les éléments n'étant pas définis plus bas
+    */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    
+    /* 
+    content-box est le comportement par défaut du CSS; c'est à dire qu'une div avec width 300, padding 20 et border 5 mesurera 350 px pour 300 voulu
+    300 (contenu) + 20 (paddoing gauche)+ 20 (padding droit)+ 5 (bordure gauche)+ 5 (bordure droite)
+
+    L'instruction suivante permet de gérer correctement la taille, en définissant la taille totale de l'élément en fonction de la largeur exprimée
+    Pour l'exemple ci dessus, pour obtenir 300px avec 20 de padding et 5 de border, le contenu fera 250 px
+    */
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+
+/* HEADER & FOOTER*/
+header, footer { 
+    background-color: blue;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+}
+
+header h1, footer h3 {
+    background-color: blue;
+}
+
+header a, footer a {
+    background-color: blue;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    color: rgb(0, 191, 0);
+}
+
+    header a:visited, footer a:visited {
+        color: orange;
+    }
+
+header ul, header li {
+    background-color: blue;
+    text-align: center;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+footer .reseaux, footer p {
+    background-color: blue;
+}
+
+
+/*IMAGES*/
+img {
+    width: 480px;
+}
+
+table img {
+    width: 240px;
+}
+
+
+/* ARTICLES */
+article {
+    background-color: rgb(223, 223, 223);
+    max-width: 500px;
+    margin: 20px auto 50px auto;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+article h3, p {
+    background-color: rgb(223, 223, 223);
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 20px;
+}
+
+article h3 {
+    color: rgb(216, 0, 216);
+    border-radius: 10px;
+}
+
+article img {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+article .price {
+    color: goldenrod;
+    font-size: larger;
+    font-weight: 900;
+}
+
+article button {
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+
+
+
+/* TABLES */
+table {
+    margin: 20px;
+}
+
+table thead, table th, table td{
+    padding: 5px;
+}
+
+table thead {
+    background-color: darkblue;
+    color: gold ;
+}
+
+table .buy {
+    text-align: center;
+}
+
+table caption {
+    margin: 20px;
+    font-size: xx-large;
+    font-weight: 900;
+    color: blue;
+}
+
+/* SPAN PAGES/PRODUCTS*/
+.build_your_own_comp, .latest_app {
+    color: purple;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+button {
+    background-color: rgb(195, 195, 195);
+}
+
+.exclu {
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+/* PAGES/SIGN_UP */
+
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 500px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+form fieldset {
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form div {
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form label {
+    background-color: white;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.connexion input, select {
+    background-color: rgb(223, 223, 223);
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 0x 10px;
+    height: 30px;
+}
+
+.optin label {
+    margin-right: 15px;
+}
+
+.last_name input {
+    border: 3px dotted red;
+}
+
+form .account_boutons_form {
+    text-align: center;
+}
+
+form button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
