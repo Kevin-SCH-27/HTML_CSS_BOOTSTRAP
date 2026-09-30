@@ -11,72 +11,72 @@
 <body>
     <header>
     <!-- Titre principale -->
-    <h1>Ma boutique - Nos produits</h1>
-    
-    <!-- Liste non ordonnée pour le menu -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="products.html">Produits</a></li>
-            <li><a href="sign_up.html">Inscription</a></li>
-            <li><a href="login.html">Connexion</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html">Panier</a></li>
-        </ul>
-    </nav>
+    <h1>Ma boutique - Accueil</h1>
+
+    <div class="menu_nav">
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="products.html">Produits</a>
+            <a href="sign_up.html">Inscription</a>
+            <a href="login.html">Connexion</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Panier</a>
+        </nav>
+    </div>
+
     </header>
 
     <main>
-    <!-- La boutique en elle-même -->
-    <section>
-        <h2>
-            Bienvenue sur notre site de vente en ligne !<br>
-            Découvrez les nouveaux disques durs externes SSd 100 To en exclusivité !!!
-        </h2>
-    </section>
-
+        <h2 class="categories_titre">Produits par catégories</h2>
+        <section class="categories">
+            <div>
+                <h3>Électronique</h3>
+                <img src="../assets/images/componants_cat.png" alt="Composants électroniques">
+            </div>
+            <div>
+                <h3>Informatique</h3>
+                <img src="../assets/images/comp_cat.jpg" alt="Matériel informatique">
+            </div>
+            <div>
+                <h3>Applications</h3>
+                <img src="../assets/images/software_cat.jpg" alt="Softwares">
+            </div>
+        </section>
     <!-- Partie sur les immanquables -->
-    <section>
-        <h2>Nos produits phares</h3>
+        <section>
+            <h2 class="categories_titre">Nos produits phares</h2>
 
-    <!-- Liste ordonnée sur les immanquables -->
-        <div class="products_container">
-            <article>
-                <h3>Tour gamer</h4>
-                <img src="../assets/images/tour_gamer.webp" alt="Tour gamer">
-                <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
-                <p class="price">Prix : 749.99 €</p>
-                <button type="button">Acheter</button>
-            </article>
+        <!-- Liste ordonnée sur les immanquables -->
+            <div class="products_container">
+                <article>
+                    <h3>Tour gamer</h3>
+                    <img src="../assets/images/tour_gamer.webp" alt="Tour gamer">
+                    <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
+                    <p class="price">Prix : 749.99 €</p>
+                    <button type="button">Acheter</button>
+                </article>
 
-            <article>
-                <h3>Barette de RAM 8GO DDR 4</h4>
-                <img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4">
-                <p>Boostez les performances de votre PC et accélérez le traitement des données temporaires !</p>
-                <p class="price">Prix : 79.99 €</p>
-                <button type="button">Acheter</button>
-            </article>
+                <article>
+                    <h3>Barette de RAM 8GO DDR 4</h3>
+                    <img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4">
+                    <p>Boostez les performances de votre PC et accélérez le traitement des données temporaires !</p>
+                    <p class="price">Prix : 79.99 €</p>
+                    <button type="button">Acheter</button>
+                </article>
 
-            <article>
-                <h3>Laptop gamer</h4>
-                <img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer">
-                <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
-                <p class="price">Prix : 949.99 €</p>
-                <button type="button">Acheter</button>
-            </article>
-        </div>
-    </section>
+                <article>
+                    <h3>Laptop gamer</h3>
+                    <img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer">
+                    <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
+                    <p class="price">Prix : 949.99 €</p>
+                    <button type="button">Acheter</button>
+                </article>
+            </div>
+        </section>
 
     <!-- Les catégories de produits -->
-    <section>
-        <h2>Produits par catégories</h3>
-        <ul>
-            <li>Électronique</li>
-            <li>Informatique</li>
-            <li>Bureautique et applications</li>
-        </ul>
-    </section>
+    
     </main>
 
     <footer>

@@ -11,20 +11,20 @@
 <body>
     <header>
     <!-- Titre principale -->
-    <h1>Ma boutique - Panier</h1>
-    
-    <!-- Liste non ordonnée pour le menu -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="products.html">Produits</a></li>
-            <li><a href="sign_up.html">Inscription</a></li>
-            <li><a href="login.html">Connexion</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html">Panier</a></li>
-        </ul>
-    </nav>
+    <h1>Ma boutique - Accueil</h1>
+
+    <div class="menu_nav">
+        <nav>
+            <a href="../index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="products.html">Produits</a>
+            <a href="sign_up.html">Inscription</a>
+            <a href="login.html">Connexion</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Panier</a>
+        </nav>
+    </div>
+
     </header>
 
     <main>
@@ -37,57 +37,63 @@
      colspan permet de fusionner des cellules sur une ligne (fusion horizontale), rowspan permet de fusionner des lignes (fusion verticale)
      Attention avec Rowspan au nombre de cellules dans la ligne qui doit être fusionnée
      -->
-        <table border="1">
-            <caption>Liste des produits</caption>
-            <thead>
-                <tr>
-                    <th>Catégorie</th>
-                    <th>Nom</th>
-                    <th>Image</th>
-                    <th>Description</th>
-                    <th>Prix</th>
-                    <th>Sélectionner</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <!-- Fusion verticale -->
-                    <td rowspan="2">PC</td>
-                    <td>Tour gamer</td>
-                    <td><img src="../assets/images/tour_gamer.webp" alt="Tour gamer"></td>
-                    <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
-                    <td class="buy">749.99 €</td>
-                    <td class="buy"><button type="button">Acheter</button></td>
-                </tr>
-            
-
-                <tr>
-                    <!-- Moins un td cause fusion verticale au dessus -->
-                    <td>Laptop gamer</td>
-                    <td><img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer"></td>
-                    <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
-                    <td class="buy">949.99 €</td>
-                    <td class="buy"><button type="button">Acheter</button></td>
-                </tr>
-
-                <tr>
-                    <td>Composantes</td>
-                    <td>Barette de RAM 8GO DDR 4</td>
-                    <td><img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4"></td>
-                    <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
-                    <td class="buy">79.99 €</td>
-                    <td class="buy"><button type="button">Acheter</button></td>
-                </tr>
-
+        <div class="table_container">
+            <table>
+                <!-- <caption>Liste des produits</caption> -->
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Nom</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th>Prix</th>
+                        <th>Acheter</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
                 
-                <tr>
-                    <td>Exclusivité</td>
-                    <td>Promotion</td>
-                    <td colspan="4" class="exclu">Produits en run off, de -20 à -50% !!!</td>
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <!-- Fusion verticale -->
+                        <td rowspan="2">PC</td>
+                        <td>Tour gamer</td>
+                        <td><img src="../assets/images/tour_gamer.webp" alt="Tour gamer"></td>
+                        <td>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</td>
+                        <td class="buy">749.99 €</td>
+                        <td class="buy_delete_choice"><input type="radio" id="buy_art_1" name="buy_delete_art_1" value="buy"></input></td>
+                        <td class="buy_delete_choice"><input type="radio" id="delete_art_1" name="buy_delete_art_1" value="delete"></input></td>
+                    </tr>
+                
+
+                    <tr>
+                        <!-- Moins un td cause fusion verticale au dessus -->
+                        <td>Laptop gamer</td>
+                        <td><img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer"></td>
+                        <td>Jouez à vos jeux partout, avec les meilleures performances !</td>
+                        <td class="buy">949.99 €</td>
+                        <td class="buy_delete_choice"><input type="radio" id="buy_art_2" name="buy_delete_art_2" value="buy"></input></td>
+                        <td class="buy_delete_choice"><input type="radio" id="delete_art_2" name="buy_delete_art_2" value="delete"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td>Composantes</td>
+                        <td>Barette de RAM 8GO DDR 4</td>
+                        <td><img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4"></td>
+                        <td>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</td>
+                        <td class="buy">79.99 €</td>
+                        <td class="buy_delete_choice"><input type="radio" id="buy_art_3" name="buy_delete_art_3" value="buy"></input></td>
+                        <td class="buy_delete_choice"><input type="radio" id="delete_art_3" name="buy_delete_art_3" value="delete"></input></td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td>Exclusivité</td>
+                        <td>Promotion</td>
+                        <td colspan="5" class="exclu">Produits en run off, de -20 à -50% !!!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>
