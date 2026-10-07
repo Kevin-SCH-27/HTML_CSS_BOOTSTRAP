@@ -105,7 +105,7 @@ article h3, p {
 }
 
 article h3 {
-    color: rgb(216, 0, 216);
+    color: rgb(62, 1, 131);
     border-radius: 10px;
 }
 
@@ -117,7 +117,7 @@ article img {
 }
 
 article .price {
-    color: goldenrod;
+    color: rgb(131, 0, 0);
     font-size: larger;
     font-weight: 900;
 }
@@ -221,6 +221,9 @@ table caption {
     margin-top: 30px;
 }
 
+/*PAGES/PRODUCTS_DETAIILS*/
+
+
 
 /* PAGES/SIGN_UP */
 
@@ -318,3 +321,4 @@ button:active {
     display: flex;
     flex-wrap: wrap;
 }
+
