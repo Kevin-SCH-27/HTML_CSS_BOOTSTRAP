@@ -11,7 +11,18 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YXSHJZEJZN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YXSHJZEJZN');
+    </script>
 </head>
+
 <body>
     <header>
     <!-- Titre principale -->
@@ -54,31 +65,64 @@
 
         <!-- Liste ordonnée sur les immanquables -->
             <div class="products_container">
-                <article>
+                <article class="products_container">
                     <h3>Tour gamer</h3>
                     <img src="../assets/images/tour_gamer.webp" alt="Tour gamer">
                     <h4>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</h4>
-                    <p> class="price">Prix : 749.99 €</p>
+                    <p class="price">Prix : 749.99 €</p>
                     <button type="button">Acheter</button>
                 </article>
 
-                <article>
+                <article class="products_container">
                     <h3>Barette de RAM 8GO DDR 4</h3>
                     <img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4">
                     <h4>Boostez les performances de votre PC et accélérez le traitement des données temporaires !</h4>
-                    <p> class="price">Prix : 79.99 €</p>
+                    <p class="price">Prix : 79.99 €</p>
                     <button type="button">Acheter</button>
                 </article>
 
-                <article>
+                <article class="products_container">
                     <h3>Laptop gamer</h3>
                     <img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer">
                     <h4>Jouez à vos jeux partout, avec les meilleures performances !</h4>
-                    <p> class="price">Prix : 949.99 €</p>
+                    <p class="price">Prix : 949.99 €</p>
                     <button type="button">Acheter</button>
                 </article>
             </div>
         </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <article class="products_container">
+                        <h3>Tour gamer</h3>
+                        <img src="../assets/images/tour_gamer.webp" alt="Tour gamer">
+                        <h4>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</h4>
+                        <p class="price">Prix : 749.99 €</p>
+                        <button type="button">Acheter</button>
+                </article>
+                </div>
+                <div class="col-4">
+                    <article class="products_container">
+                        <h3>Barette de RAM 8GO DDR 4</h3>
+                        <img src="../assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4">
+                        <h4>Boostez les performances de votre PC et accélérez le traitement des données temporaires !</h4>
+                        <p class="price">Prix : 79.99 €</p>
+                        <button type="button">Acheter</button>
+                    </article>
+                </div>
+                <div class="col-4">
+                    <article class="products_container">
+                        <h3>Laptop gamer</h3>
+                        <img src="../assets/images/laptop_gamer.webp" alt="Laptop gamer">
+                        <h4>Jouez à vos jeux partout, avec les meilleures performances !</h4>
+                        <p class="price">Prix : 949.99 €</p>
+                        <button type="button">Acheter</button>
+                    </article>
+                </div>
+            </div>
+
+        </div>
 
     <!-- Les catégories de produits -->
     

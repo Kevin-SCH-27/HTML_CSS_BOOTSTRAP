@@ -322,3 +322,13 @@ button:active {
     flex-wrap: wrap;
 }
 
+.affichage_produit_carousel h2, p, button {
+    background-color: grey;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+}
