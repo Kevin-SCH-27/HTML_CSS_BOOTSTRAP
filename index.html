@@ -12,15 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YXSHJZEJZN"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YXSHJZEJZN');
-    </script>
 </head>
 
 <body>
@@ -39,22 +30,23 @@
             <a href="pages/login.html">Connexion</a>
             <a href="pages/contact.html">Contact</a>
             <a href="pages/cart.html">Panier</a>
+            <a href="pages/add_product.html">Ajouter un produit</a>
         </nav>
     </div>
 
     </header>
 
-    <main>
+    <main id="main_index">
     <!-- La boutique en elle-même -->
     <section>
-        <h2>
-            Bienvenue sur notre site de vente en ligne !<br>
+        <h2 id="test">
+            Bienvenue sur notre site de vente en ligne !<br> <!-- modifié sur page JS -->
             Découvrez les nouveaux disques durs externes SSd 100 To en exclusivité !!!
         </h2>
     </section>
 
     <!-- Partie sur les immanquables -->
-    <section>
+    <section class="">
         <h2>Nos produits phares</h2>
 
     <!-- Liste ordonnée sur les immanquables -->
@@ -62,7 +54,7 @@
             <h3>Tour gamer</h3>
             <img src="assets/images/tour_gamer.webp" alt="Tour gamer">
             <p>Tour gamer dotée de composantes de dernière génération pour jouer avec des graphismes poussés !</p>
-            <p>Prix : 749.99 €</p>
+            <p class="prix_produits">Prix : 749.99 €</p>
             <button type="button">Acheter</button>
         </article>
 
@@ -70,7 +62,7 @@
             <h3>Barette de RAM 8GO DDR 4</h3>
             <img src="assets/images/barette_ram.jpg" alt="Barette de RAM 8GO DDR 4">
             <p>Boostez les peformances de votre PC et accélérez le traitement des données temporaires !</p>
-            <p>Prix : 79.99 €</p>
+            <p class="prix_produits">Prix : 79.99 €</p>
             <button type="button">Acheter</button>
         </article>
 
@@ -78,7 +70,7 @@
             <h3>Laptop gamer</h3>
             <img src="assets/images/laptop_gamer.webp" alt="Laptop gamer">
             <p>Jouez à vos jeux partout, avec les meilleures performances !</p>
-            <p>Prix : 949.99 €</p>
+            <p class="prix_produits">Prix : 949.99 €</p>
             <button type="button">Acheter</button>
         </article>
     </section>
@@ -104,8 +96,12 @@
         </div>
     </footer>
 
+    <button type="button" class="scroll_up">↑</button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
 
 </body>
 </html>

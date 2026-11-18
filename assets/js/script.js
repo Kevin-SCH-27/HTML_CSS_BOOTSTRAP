@@ -316,8 +316,10 @@ alert("Le deuxième élément de ce tableau est " + serieNombre1[1]);
 let serieCourses = ["pain", "lait", "oeufs"];
 serieCourses.push("fromage");
 serieCourses.unshift("beurre");
-serieCourses.splice(2,1);
-serieCourses[3] = "yaourts";
+serieCourses.splice(2,1); // supprime 1 élément à partir de l'index 2
+serieCourses.splice(2,1,"élément"); // remplace 1 élement indiqué à l'index 2 par un autre élément 
+serieCourses.splice(2,0,"élément"); // ajoute un élément après l'élément 2 sans supprimer
+serieCourses[2] = "yaourts";
 console.log(serieCourses);
 
 
@@ -332,7 +334,7 @@ function checkUser(array, nom) {
     let trouve = false;
 
     for(let i = 0; i<array.length; i++) {
-        if (users[i] === nom) {
+        if (array[i] === nom) {
             trouve = true;
         }
     }
@@ -380,3 +382,137 @@ else {
 }
 
 */
+
+/*
+const products = document.getElementsByClassName('products_container');
+console.log(products);
+console.log(products[0]);
+
+const articles = document.getElementsByTagName('article');
+console.log(articles);
+
+const queryArticles = document.querySelector('article');
+console.log(queryArticles);
+
+const item = document.getElementById('test');
+//modifier le contenu texte de l'élément
+item.textContent = "Nouveautés sur notre site de vente en ligne !!!";
+//injecter du code HTML
+item.innerHTML = "<strong>Nouveautés</strong> sur notre site de vente en ligne !!!"
+//modifier le style de l'élément
+item.style.color ="purple";
+item.style.fontSize = "40px";
+item.style.backgroundColor = "red";
+*/
+
+/*
+// TP6 Exo1
+
+const mainIndex = document.getElementById('main_index');
+mainIndex.style.backgroundColor = "rgb(191,191,191)";
+mainIndex.style.borderWidth ="1px";
+mainIndex.style.borderStyle = "solid";
+mainIndex.style.borderRadius = "10px";
+
+//mainIndex.style.border = "1px solid black"; fonctionne aussi
+
+// TP6 Exo2
+const titreProduits = document.querySelectorAll('article h3');
+for(let i = 0; i<titreProduits.length; i++) {
+    titreProduits[i].style.color = "purple";
+    titreProduits[i].textContent = titreProduits[i].textContent.toUpperCase();
+}
+
+// TP6 Exo3
+const boutonProduits = document.querySelectorAll('article button');
+for (let i = 0; i<boutonProduits.length; i++) {
+    boutonProduits[i].textContent = "Ajouter au panier";
+    boutonProduits[i].style.backgroundColor = "cyan";
+    boutonProduits[i].style.color = "black";
+    
+    // TP6 Exo4
+
+    boutonProduits[i].addEventListener("click", function() {
+        boutonProduits[i].style.backgroundColor = "blue";
+        boutonProduits[i].style.color = "white";
+    })
+}
+*/
+/*
+
+// TP6 Exo5 -> tentative perso
+const prixProduits = document.querySelectorAll('.prix_produits');
+for (let i = 0; i<prixProduits.length; i++) {
+    const texte = prixProduits[i].textContent;
+    const regex = /-?\d+(\.\d+)?/;
+    const match = texte.match(regex);
+    if (match) {
+        const prix = parseFloat(match[0]); 
+        if (prix <= 500) {
+            prixProduits[i].style.color = "green";
+        }
+        else if (prix > 500 && prix <= 900) {
+            prixProduits[i].style.color = "orange";
+        }
+        else {
+            prixProduits[i].style.color = "red";
+        }
+    } 
+}
+
+// TP6 Exo6 -> tentative perso
+const listeProduits = document.querySelectorAll('.prix_produits');
+for (let i = 0; i<listeProduits.length; i++) {
+    const texte = listeProduits[i].textContent;
+    const regex = /-?\d+(\.\d+)?/;
+    const match = texte.match(regex);
+    let prix = 0;
+    if (match) {
+        prix = parseFloat(match[0]);
+    }
+
+    const parent = listeProduits[i].parentElement;
+    
+    if (prix > 900) {
+        ajout = document.createElement('p');
+        ajout.textContent = "Top Produit !";
+        ajout.classList.add('badge_top_produit');
+        // ajout de propriété CSS pour la mise en forme
+
+        parent.prepend(ajout);
+    }
+
+    else if (prix < 500) {
+        ajout = document.createElement('p');
+        ajout.textContent = "Bonne affaire";
+        ajout.classList.add('badge_bonne_affaire');
+        // ajout de propriété CSS pour la mise en forme
+
+        parent.prepend(ajout);
+    }
+    
+}
+*/
+
+
+// TP6 Exo5 -> correction
+let prixProduits = document.querySelectorAll('.prix_produits');
+
+prixProduits.forEach((prix) => {
+    let textePrix = prix.innerText;
+    //1ère méthode : utiliser replace pour remplacer les expressions littérales
+    //let montant = Number(textePrix.replace("Prix :", "").replace("€","").trim());
+    //2ème méthode : utiliser les expressions régulières (RegExp)
+    let montant = Number(textePrix.replace(/[^\d.]/g,""));
+    console.log(montant);
+
+    if (montant <= 200) {
+        prix.style.color = "green";
+    } else if (montant > 200 && montant <= 750) {
+        prix.style.color = "orange";
+    } else {
+        prix.style.color = "red";
+    }
+})
+
+// TP6 Exo6 -> pas de correction cause pas de code CSS, ydnar avait un bon code

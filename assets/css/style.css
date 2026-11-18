@@ -20,6 +20,19 @@
 
 /* BODY */
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIN */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
 
 /* HEADER & FOOTER*/
 header, footer { 
@@ -27,6 +40,8 @@ header, footer {
     text-align: center;
     color: aliceblue;
     padding: 10px;
+    height: 150px;
+
 }
 
 header h1, footer h3 {
@@ -94,6 +109,8 @@ article {
     margin: 20px auto 50px auto;
     padding-bottom: 15px;
     border-radius: 10px;
+
+    position: relative;
 }
 
 article h3, p {
@@ -273,11 +290,11 @@ form label {
     font-weight: bold;
 }
 
-.connexion input[type="text"], input[type="email"], input[type="password"], select {
+.connexion input[type="text"], .connexion input[type="email"], .connexion input[type="password"], select {
     background-color: rgb(223, 223, 223);
-    width: 100%;
+    width: 95%;
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 10px;
     height: 30px;
 }
@@ -322,13 +339,61 @@ button:active {
     flex-wrap: wrap;
 }
 
-.affichage_produit_carousel h2, .affichage_produit_carousel p, .affichage_produit_carousel button {
-    background-color: grey;
+.badge_top_produit {
+    background-color: rgb(255, 255, 0);
+    color: black;
+    font-size: smaller;
+    font-weight: bolder;
+    position: absolute;
+    
+    width: 15%;
+    height: auto;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 10px;
     margin: 0 auto;
-    display: flex; 
-    flex-direction: column;
+    padding: 10px;
+
+}
+
+.badge_bonne_affaire {
+    background-color: rgb(0, 127, 0);
+    color: white;
+    font-size: smaller;
+    font-weight: bolder;
+    position: absolute;
+    
+    width: 15%;
+    height: auto;
+    top: 10px;
+    left: 10px;
+
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+/* BOUTON SCROLL_UP*/
+.scroll_up {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
-    padding: 20px;
+
+    width: 5%;
+    min-width: 50px;
+    height: 40px;
+
+    font-size: xx-large;
+    background-color: blue;
+    font-weight: 900;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 10px;
+
 }

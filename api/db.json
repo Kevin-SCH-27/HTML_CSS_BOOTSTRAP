@@ -1,0 +1,47 @@
+{
+  "produits": [
+    {
+      "nom": "Bob",
+      "description": "Bobby la chemise",
+      "prix": "20",
+      "imgURL": "bobbius",
+      "id": "sevQ18rKiHU"
+    },
+    {
+      "nom": "Mama",
+      "description": "La robe",
+      "prix": "40",
+      "imgURL": "mama",
+      "id": "nza2m9LRGAw"
+    },
+    {
+      "nom": "jean jean",
+      "description": "le cacolac",
+      "prix": "10",
+      "imgURL": "jeanjean",
+      "id": "QJ3OTnzIbmA"
+    },
+    {
+      "nom": "bibi",
+      "description": "les lunettes",
+      "prix": "15",
+      "imgURL": "bibi",
+      "id": "RWdYSJu4jS4"
+    },
+    {
+      "nom": "thanos",
+      "description": "le gant",
+      "prix": "40",
+      "imgURL": "thanos",
+      "id": "1tvBGU3eIU0"
+    },
+    {
+      "nom": "mugiwara",
+      "description": "no luffy",
+      "prix": "100",
+      "imgURL": "berries",
+      "id": "iiuHTQAYXs4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
